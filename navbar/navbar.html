@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPhotography</title>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../navbar/css/navbar.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!--  -->
+</head>
+<body>        
+        <div class="container">
+          <nav class="navbar navbar-inverse" id="topnav">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand class"><spane id="brand">RPhotography</spane></div>
+            </div>
+            
+            <div class="collapse navbar-collapse js-navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav" id="nav-links">
+                    <!---->
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>				
+                        <ul class="dropdown-menu mega-dropdown-menu">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Photography</li>
+                                    <li><a href="#">People</a></li>
+                                    <li><a href="#">Nature</a></li>
+                                    <li><a href="#">Culture</a></li>
+                                    <li><a href="#">Horizon</a></li>
+                                    <li><a href="#">Gastronomy</a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Aviation</li>
+                                    <li><a href="#">Civil</a></li>
+                                    <li><a href="#">Military</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Technology</li>
+                                    <li><a href="#">HD</a></li>
+                                    <li><a href="#">Focus</a></li>
+                                    <li><a href="#">Zoom in</a></li>
+                                    <li><a href="#">Zoom out</a></li>
+                                    <li><a href="#">Telescope</a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Fashion</li> 
+                                    <li><a href="#">Old Fashion</a></li>
+                                    <li><a href="#">Modern Day</a></li>                           							
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Continents</li>
+                                    <li><a href="#">Asia</a></li>
+                                    <li><a href="#">Africa</a></li>
+                                    <li><a href="#">Europe</a></li>
+                                    <li><a href="#">America</a></li> 
+                                    <li><a href="#">Australia</a></li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Agriculture</li> 
+                                    <li><a href="#">Traditional</a></li>
+                                    <li><a href="#">Advanced</a></li>                        
+                                </ul>
+                            </li>
+
+                            <li class="col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header">Oceans</li>
+                                        <li><a href="#">Southern</a></li>
+                                        <li><a href="#">Atlantic</a></li>
+                                        <li><a href="#">Pacific</a></li>
+                                        <li><a href="#">Indian</a></li>
+                                        <li><a href="#">Arctic</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Then &amp; Now</li> 
+                                        <li><a href="#">Newspapers</a></li>
+                                        <li><a href="#">Smartphone</a></li>                         
+                                    </ul>
+                            </li>
+                           
+                        </ul>				
+                    </li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div><!-- /.nav-collapse -->
+          </nav>
+
+          
+        </div>
+        
+    <script>
+        $(document).ready(function(){
+            $(".dropdown").hover(            
+                function() {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+                    $(this).toggleClass('open');        
+                },
+                function() {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+                    $(this).toggleClass('open');       
+                }
+            );
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPhotography</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!--  -->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse" id="topnav">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand class"><spane id="brand">RPhotography</spane></div>
+                </div>
+                
+                <div class="collapse navbar-collapse js-navbar-collapse" id="navigation">
+                    <ul class="nav navbar-nav" id="nav-links">
+                        <li class="active"><a href="../../../index.html">Home</a></li>
+                        <li class="dropdown mega-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="collapse" data-target="#categories">Categories<span class="caret"></span></a>				
+                            <div id="categories">
+                                    <!-- <ul class="dropdown-menu mega-dropdown-menu">
+                                            <li class="col-sm-3">
+                                                <ul>
+                                                    <li class="dropdown-header">Photography</li>
+                                                    <li><a href="#">People</a></li>
+                                                    <li><a href="#">Nature</a></li>
+                                                    <li><a href="#">Culture</a></li>
+                                                    <li><a href="#">Horizon</a></li>
+                                                    <li><a href="#">Gastronomy</a></li>
+                                                    <li class="divider"></li>
+                                                    <li class="dropdown-header">Aviation</li>
+                                                    <li><a href="#">Civil</a></li>
+                                                    <li><a href="#">Military</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="col-sm-3">
+                                                <ul>
+                                                    <li class="dropdown-header">Technology</li>
+                                                    <li><a href="#">HD</a></li>
+                                                    <li><a href="#">Focus</a></li>
+                                                    <li><a href="#">Zoom in</a></li>
+                                                    <li><a href="#">Zoom out</a></li>
+                                                    <li><a href="#">Telescope</a></li>
+                                                    <li class="divider"></li>
+                                                    <li class="dropdown-header">Fashion</li> 
+                                                    <li><a href="#">Old Fashion</a></li>
+                                                    <li><a href="#">Modern Day</a></li>                           							
+                                                </ul>
+                                            </li>
+                                            <li class="col-sm-3">
+                                                <ul>
+                                                    <li class="dropdown-header">Continents</li>
+                                                    <li><a href="#">Asia</a></li>
+                                                    <li><a href="#">Africa</a></li>
+                                                    <li><a href="#">Europe</a></li>
+                                                    <li><a href="#">America</a></li> 
+                                                    <li><a href="#">Australia</a></li>
+                                                    <li class="divider"></li>
+                                                    <li class="dropdown-header">Agriculture</li> 
+                                                    <li><a href="#">Traditional</a></li>
+                                                    <li><a href="#">Advanced</a></li>                        
+                                                </ul>
+                                            </li>
+                
+                                            <li class="col-sm-3">
+                                                    <ul>
+                                                        <li class="dropdown-header">Oceans</li>
+                                                        <li><a href="#">Southern</a></li>
+                                                        <li><a href="#">Atlantic</a></li>
+                                                        <li><a href="#">Pacific</a></li>
+                                                        <li><a href="#">Indian</a></li>
+                                                        <li><a href="#">Arctic</a></li>
+                                                        <li class="divider"></li>
+                                                        <li class="dropdown-header">Then &amp; Now</li> 
+                                                        <li><a href="#">Newspapers</a></li>
+                                                        <li><a href="#">Smartphone</a></li>                         
+                                                    </ul>
+                                            </li>
+                                           
+                                        </ul>	 -->
+                            </div>			
+                        </li>
+                        
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+            </div><!-- /.nav-collapse -->
+    </nav>
+    <main class="content">
+        <div id="landing">
+            <!--Landing text goes here-->
+            <div id="landing-text">
+                <div id="landing-text-inner">
+                    <h1>Random Photography</h1>
+                    <h2>Taken somewhere around the world</h2>
+                    <a class="btn" href="#images" id="view-work">DISCOVER</a>
+                    <!--<button class="btn" onclick="window.location.href='/#images'">View work</button>-->
+                </div>
+            </div>
+            <!--landing image goes here-->
+            <div id="landing-image">
+
+            </div>
+        </div>
+        <div id="images">
+            <div id="header">
+                <h2>Photographed</h2>
+            </div>
+
+            <!--images come from source.unsplash.com-->
+            <img src="https://source.unsplash.com/1600x900/?jazz, music" alt="">
+            <div class="caption">
+                <h3>Photo One</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, quia?</p>
+            </div>
+            <img src="https://source.unsplash.com/1600x900/?cycling, wellness" alt="">
+            <div class="caption">
+                <h3>Photo Two</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, quia?</p>
+            </div>
+            <img src="https://source.unsplash.com/1600x900/?philadelphia, museum" alt="">
+            <div class="caption">
+                <h3>Photo Three</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, quia?</p>
+            </div>
+            <img src="https://source.unsplash.com/1600x900/?island, vacation" alt="">
+            <div class="caption">
+                <h3>Photo Four</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, quia?</p>
+            </div>
+            <img src="https://source.unsplash.com/1600x900/?philadelphia, rivers" alt="">
+            <div class="caption">
+                <h3>Photo Five</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, quia?</p>
+            </div>
+        </div> <!--end images div-->
+    </main>
+    <!--side bar-->
+    <div id="sidebar-left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, vel?
+    </div>
+    <div id="sidebar-right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, vel?
+        </div>
+    <footer>
+        <h3>Get In Touch</h3>
+        <p>Email or call us to set up a consult</p>
+        <p>Email:
+            <strong>contact@hobbyphoto.test</strong>
+        </p>
+        <p>Phone:
+            <strong>(999)222 3333</strong>
+        </p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    
+</body>
+
+</html>
